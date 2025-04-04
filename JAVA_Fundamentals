@@ -1,0 +1,119 @@
+public class JAVA_Fundamentals { // Declares a public class named JAVA_Fundamentals. This is the entry point of our program.
+
+public static void main(String[] args) { //  The main method.  Execution of the program begins here.
+         //  'public' means it can be accessed from outside the class.
+         //  'static' means it belongs to the class itself, not an instance of the class.
+         //  'void' means it doesn't return any value.
+         //  'String[] args' is an array of strings that can be used to pass command-line arguments to the program.
+// Literals and Data Types
+// Primitive Data Types
+int integerLiteral = 10; // Integer literal 
+double doubleLiteral = 3.14; // Double literal 
+boolean booleanLiteral = true; // Boolean literal 
+char charLiteral = 'A'; // Character literal
+long longLiteral = 1234567890L; // Long literal, note the 'L' 
+float floatLiteral = 3.14f; // Float literal, note the 'f' 
+byte byteLiteral = 127; // Byte literal
+short shortLiteral = 32000; //Short literal
+  System.out.println("Primitive Data Types:"); 
+  System.out.println("---------------------");
+  System.out.println("Integer: " + integerLiteral);
+  System.out.println("Double: " + doubleLiteral); 
+  System.out.println("Boolean: " + booleanLiteral);
+  System.out.println("Character: " + charLiteral); 
+  System.out.println("Long: " + longLiteral); 
+  System.out.println("Float: " + floatLiteral); 
+  System.out.println("Byte: " + byteLiteral); 
+  System.out.println("Short: " + shortLiteral +"\n\n");
+
+// Complex Data Types (Reference/User-defined)
+String stringLiteral = "Hello, Welcome to JAVA World!"; //String (reference type)
+ int[] intArray = {1, 2, 3}; // Array (reference type)
+class MyClass { // User-defined class 
+ int value;
+MyClass(int value) { 
+  this.value = value;
+ }
+}
+
+MyClass myObject = new MyClass(5); // Creating an instance of MyClass
+  System.out.println("Complex Data Types\n(Reference/User-defined)");
+  System.out.println("-----------------------------------");
+  System.out.println("stringLiteral= Hello, Welcome to\nJAVA World!");
+  System.out.println("intArray = {1, 2, 3}"); 
+  System.out.println("String: " + stringLiteral); 
+  System.out.println("Array element 0: " + intArray[0]); 
+  System.out.println("MyClass value: " + myObject.value +"\n\n");
+
+
+// Variable Declaration
+int myVariable; // Declaration 
+myVariable = 20; // Initialization
+  System.out.println("Variable Declaration");
+  System.out.println("---------------------");
+  System.out.println("My Variable: " + myVariable +"\n\n");
+
+// Arithmetic Operators (+, -, *, /, %, ^) 
+int a = 10; int b = 3;
+  System.out.println("Arithmetic Operators (+, -, *, /, %, ^)");
+  System.out.println("--------------------------------------");
+  System.out.println("a = 10, b = 3"); 
+  System.out.println("a + b = " + (a + b)); // Addition 
+  System.out.println("a - b = " + (a - b)); // Subtraction
+  System.out.println("a * b = " + (a * b)); // Multiplication 
+  System.out.println("a / b = " + (a / b)); // Division 
+  System.out.println("a % b = " + (a % b)); // Modulus(remainder)
+//Java does not have a built in power operator ^, for power use Math.pow()
+ System.out.println("a power b = " + Math.pow(a, b) + "\n\n");
+//Exponentiation using Math.pow()
+
+// Boolean Operators (&&, ||) 
+boolean x = true;
+boolean y = false;
+  System.out.println("Boolean Operators (&&, ||)"); 
+  System.out.println("--------------------------");
+  System.out.println("x = true, y = false "); 
+  System.out.println("x && y = " + (x && y)); // Logical AND
+  System.out.println("x || y = " + (x || y) +"\n\n"); // Logical OR
+
+// Relational Operators (<=, >, >=, !=, ==) 
+int c = 5;
+int d = 8;
+  System.out.println("Relational Operators (<=, >, >=, !=, ==)");
+  System.out.println("--------------------------------------");
+  System.out.println("c =5 , d =8 ");
+  System.out.println("c <= d = " + (c <= d)); // Less than or equal to
+  System.out.println("c > d = " + (c > d)); // Greater than
+  System.out.println("c >= d = " + (c >= d));// Greater than or equal to
+  System.out.println("c != d = " + (c != d)); // Not equal to
+  System.out.println("c == d = " + (c == d) + "\n\n"); // Equal  Equal 
+
+
+// Assignment Operator (=) 
+int result = a + b; // Assigning the result of a + b to the variable 'result'
+  System.out.println("Result: a + b " + result +"\n\n");
+
+// Type Casting and Conversion 
+  System.out.println("Type Casting and Conversion");
+  System.out.println("---------------------------"); 
+double doubleValue = 10.75;
+int intValue = (int) doubleValue; // Explicit casting (narrowing)
+ System.out.println("Double to int:" + doubleValue + "to" + intValue);
+
+int intValue2 = 100;
+double doubleValue2 = intValue2; // Implicit casting (widening)
+System.out.println("Int to double:" + intValue2 + "to" +doubleValue2);
+
+String stringValue = String.valueOf(intValue2); //Conversion to String
+ System.out.println("Int to String:" + intValue2 +" to " + stringValue + "\n\n");
+
+// Escape Sequences
+  System.out.println("Escape Sequences");
+  System.out.println("------------------");
+  System.out.println("This is a line with a \\ backslash.");
+  System.out.println("This is a line with a \t tab.");
+  System.out.println("This is a line with a \n new line.");
+  System.out.println("This\nis a line with a \" double quote.");
+  System.out.println("This isa line with a \' single quote.\n");
+ }
+}
