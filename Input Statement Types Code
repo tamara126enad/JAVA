@@ -1,0 +1,46 @@
+//Input Statement Types Code :
+
+import java.util.Scanner; // Import Scanner class for user input
+
+public class InputTypesExample {
+    public static void main (String[] args) {
+        // Create Scanner object to read input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // --- Input a String ---
+        System.out.print("Enter your name: "); // Prompt the user
+        String name = scanner.nextLine(); // Reads a full line of text
+
+        // --- Input an Integer ---
+        System.out.println("Enter your age: ");
+        int age = scanner.nextInt(); // Reads an integer value
+
+        // --- Input a Float ---
+        System.out.println("Enter your height in meters: ");
+        float height = scanner.nextFloat(); // Reads a float value
+
+        // --- Input a Double ---
+        System.out.println("Enter your weight in kilograms: ");
+        double weight = scanner.nextDouble(); // Reads a double value
+
+        // --- Input a Character ---
+        System.out.println("Enter your gender (M/F): ");
+        char gender = scanner.next().charAt(0); // Reads a single character
+
+        // --- Input a Boolean ---
+        System.out.println("Are you a student? (true/false): ");
+        boolean isStudent = scanner.nextBoolean(); // Reads true or false
+
+        // --- Output the gathered information ---
+        System.out.println("\n--- Summary ---");
+        System.out.println("Name: " + name);            // Display string
+        System.out.println("Age: " + age);              // Display integer
+        System.out.println("Height: " + height + " m"); // Display float
+        System.out.println("Weight: " + weight + " kg");  // Display double
+        System.out.println("Gender: " + gender);        // Display char
+        System.out.println("Student: " + isStudent);    // Display boolean
+
+        // Close the scanner to free resources
+        scanner.close();
+    }
+}
